@@ -4,6 +4,7 @@ import { defineConfig } from "vitest/config";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/todo-list/",
   server: {
     open: true,
   },
@@ -13,6 +14,6 @@ export default defineConfig({
     setupFiles: ["./src/setupTests.ts"],
     coverage: {
       reportOnFailure: true,
-    }
+    },
   },
 });
